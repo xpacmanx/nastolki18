@@ -1,0 +1,23 @@
+{
+  "name": "nastolki18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "telebot": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpacmanx/nastolki18.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpacmanx/nastolki18/issues"
+  },
+  "homepage": "https://github.com/xpacmanx/nastolki18#readme"
+}
