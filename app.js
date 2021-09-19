@@ -4,6 +4,8 @@ const bot = new TeleBot(process.env.TG_TOKEN);
 const list = {
     data: {
         'да': 'пизда',
+        'da': 'pizda',
+        'net': 'pidora otvet',
         'нет': ['пидора ответ', 'http://memesmix.net/media/created/muem7j.jpg'],
     },
     random(arr) {
@@ -36,7 +38,7 @@ bot.on('text', function (msg) {
     let message = list.get(query)
     if (message) {
         count++
-        if (count % 3) return false
+        if (count % 2) return false
         if (count > 99) count = 0
         msg.reply.text(message)
     }
