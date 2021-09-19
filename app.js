@@ -25,6 +25,9 @@ const list = {
             case 'object':
                 return this.random(this.data[query])
                 break;
+            default:
+                return false
+                break;
         }
     }
 }
