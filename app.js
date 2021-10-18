@@ -32,7 +32,7 @@ const list = {
     }
 }
 
-let count = 0
+// let count = 0
 
 bot.on('text', function (msg) {
     let query = msg.text.split(' ')
@@ -40,9 +40,9 @@ bot.on('text', function (msg) {
     query = query.replace(/[^a-zа-я0-9]+/g, '')
     let message = list.get(query)
     if (message) {
-        count++
-        if (count % 2) return false
-        if (count > 99) count = 0
+        // count++
+        // if (count % 2) return false
+        // if (count > 99) count = 0
         bot.sendMessage(msg.chat.id, message, { replyToMessage: msg.message_id });
     }
 });
