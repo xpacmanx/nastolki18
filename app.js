@@ -43,8 +43,7 @@ bot.on('text', function (msg) {
         count++
         if (count % 2) return false
         if (count > 99) count = 0
-        bot.sendMessage(msg.from.id, message, { replyToMessage: msg.message_id });
-        // msg.reply.text(message)
+        bot.sendMessage(msg.chat.id, message, { replyToMessage: msg.message_id });
     }
 });
 
